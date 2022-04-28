@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/carview"
+        android:layout_width="195dp"
+        android:layout_height="190dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_2"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <TextView
+        android:id="@+id/rating1"
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:layout_weight="0"
+        android:text="3/5"
+        style="@style/Date"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname1" />
+
+    <TextView
+        style="@style/boldname"
+        android:id="@+id/itemname1"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:layout_weight="0"
+        android:text="HK Street View"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carview" />
+
+    <ImageView
+        android:id="@+id/RiverView"
+        android:layout_width="195dp"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_3" />
+
+    <TextView
+        style="@style/boldname"
+        android:id="@+id/itemname2"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Hong Kong River"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RiverView" />
+
+    <TextView
+        android:id="@+id/rating2"
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        android:layout_weight="0"
+        style="@style/Date"
+        android:text="2/5"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname2" />
+
+    <ImageView
+        android:id="@+id/PrisionIsland"
+        android:layout_width="195dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating1"
+        app:srcCompat="@drawable/img_4" />
+
+    <TextView
+        style="@style/boldname"
+        android:id="@+id/itemname3"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Abondan Prision Island"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PrisionIsland" />
+
+    <TextView
+        android:id="@+id/rating3"
+        android:layout_width="195dp"
+        style="@style/Date"
+        android:layout_height="35dp"
+        android:layout_weight="0"
+        android:text="1/5"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname3" />
+
+    <ImageView
+        android:id="@+id/HKAirport"
+        android:layout_width="195dp"
+        android:layout_height="190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rating1"
+        app:layout_constraintVertical_bias="0.501"
+        app:srcCompat="@drawable/img_5" />
+
+    <TextView
+        style="@style/boldname"
+        android:id="@+id/itemname4"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Hong Kong International Airport"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HKAirport" />
+
+    <TextView
+        android:id="@+id/rating4"
+        android:layout_width="195dp"
+        android:layout_height="20dp"
+        style="@style/Date"
+        android:layout_weight="0"
+        android:text="4/5"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemname4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
